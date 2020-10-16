@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercicio</title>
+</head>
+<body>
+	<h1>Cadastro para Pesquisa</h1>
+<br>
+<br>
+	<form>
+		<fieldset>
+			<legend>Dados Pessoais</legend>	
+		<label for = "name">Nome:</label><br>
+			<input type="text" name="name" id="nome" required placeholder="Digite seu nome"><br>
+				<br>
+		<label for= "email">E-mail:</label><br>
+			<input type="text" name="email" id="e-mail" required placeholder="ex.:seuemail@mail.com"><br>
+				<br>
+		
+		<label for="nasc">Data de Nascimento:</label><br>
+			<input type="date" name="nasc" id="nasc" min="1960-01-01" max="2020-12-31" required><br>
+				<br>			
+		<label for="sexo">Sexo:</label><br>
+			<input type="radio" name="sexo" value="M">Masculino<br>
+			<input type="radio" name="sexo" value="F">Feminino<br>
+	</fieldset>
+		<br>
+		<br>
+	
+	<fieldset>
+			<legend>Endereço</legend> 
+		<label for="endereco">Logradouro:</label><br>
+		<input type="text" name="logradouro" id="logradouro" required placeholder="Digite o logradouro"><br>
+			<br>
+		<label for="endereco">Número:</label><br>
+		<input type="number" name="numero" id="numero" required placeholder="N° do logradouro"><br>
+			<br>
+		<label for="cep">CEP:</label><br>
+		<input type="number" name="cep" placeholder="Digite o CEP"><br>
+			<br>
+		<label for="bairro">Bairro:</label><br>
+		<input type="text" name="bairro" required placeholder="Digite o bairro"><br>
+			<br>
+		<label for="cidade">Cidade:</label><br>
+		<select name="cidade" id="cidade"> 
+			<option disabled="disabled" selected>Escolha a Cidade</option>
+			<option value="1">Santos</option>
+			<option value="2">São Vicente</option>
+			<option value="3">Praia Grande</option>
+			<option value="4">Mongaguá</option>
+			<option value="5">Itanhaém</option>
+			<option value="6">Peruíbe</option><br>
+		</select>
+	</fieldset>
+	<br>
+	<br>
+	<fieldset>
+				<legend>Área de Pesquisa:</legend>	
+			<select name="area" id="area"> 
+			<option disabled="disabled" selected>Escolha a Área</option>
+			<option value="1">Saúde</option>
+			<option value="2">Meio Ambiente</option>
+			<option value="3">Tecnologia da Informação</option>
+			<option value="4">Administração</option>
+			<option value="5">Recursos Humanos</option>
+			<option value="6">Direito</option>
+		</select>
+			</fieldset>
+				<br>
+	<fieldset>
+				<legend>Passatempos Preferidos</legend>
+
+			<p>Marque quantos achar necessário</p>
+		<input type="checkbox" name="passatempo[]" value="dancar">Dançar<br>
+			<input type="checkbox" name="passatempo[]" value="escrever">Escrever<br>
+		<input type="checkbox" name="passatempo[]" value="musicas">Ouvir Músicas<br>
+			<input type="checkbox" name="passatempo[]" value="jardinagem">Jardinagem<br>
+		<input type="checkbox" name="passatempo[]" value="animais">Cuidar de um aninal de estimação<br>
+			<input type="checkbox" name="passatempo[]" value="voluntariado">Ser voluntário<br>
+		<input type="checkbox" name="passatempo[]" value="comer">Comer<br>
+			<input type="checkbox" name="passatempo[]" value="yoga">Praticar Yoga<br>
+		<input type="checkbox" name="passatempo[]" value="jogar">Jogar videogame<br>
+			<input type="checkbox" name="passatempo[]" value="desnhar">Desenhar<br>
+	</fieldset>
+			<br>
+				<br>
+		<input type="submit" value="Cadastrar">
+			<br>
+			<br>
+		
+	</form>
+	<style>
+		body{
+			background-color: #F7E7CE;
+			font-family: "Arial"
+		}
+	fieldset{
+		background-color: #7DF9FF;
+
+		}
+	legend{
+		color: #FF00FF;
+		}
+	input[type=text], input[type=number], input[type=date]{
+		width: 30%;
+		}
+	select{
+		width: 30%;
+	}	
+	</style>
+</body>
+</html>
